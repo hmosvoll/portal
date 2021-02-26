@@ -22,3 +22,14 @@ h1.heading {
 .sub-header{
     font-size: 2rem;
 }
+
+.slide-nav {
+    
+}
+
+.slide-next{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    color: white;
+}
