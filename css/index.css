@@ -27,9 +27,16 @@ h1.heading {
     
 }
 
-.slide-next{
+.slide-previous, .slide-next {
     position: fixed;
-    right: 10px;
     top: 50%;
     color: white;
+}
+
+.slide-next{
+    right: 1rem;
+}
+
+.slide-previous{
+    left: 1rem;
 }
