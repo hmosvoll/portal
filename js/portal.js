@@ -1,6 +1,6 @@
 (() => {
     const portal = document.createElement('portal');
-    portal.src = 'http://localhost:8080/portal';
+    portal.src = 'portal';
     //portal.style = '...';
 
     portal.classList.add('portal-transition');
