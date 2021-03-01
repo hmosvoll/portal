@@ -1,7 +1,7 @@
 # Portal
 Work in progress...
 
-Testing [Portal element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/
+Testing [Portal element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/)
 
 ## References
 - https://web.dev/hands-on-portals/
