@@ -3,10 +3,10 @@
     const previousElement = document.querySelector("#previous");
 
     document.addEventListener("keydown", (event) => {
-        if(event.key === "ArrowRight"){
+        if(nextElement && event.key === "ArrowRight"){
             nextElement.click();
         }
-        if(event.key === "ArrowLeft"){
+        if(previousElement && event.key === "ArrowLeft"){
             previousElement.click();
         }
     });
