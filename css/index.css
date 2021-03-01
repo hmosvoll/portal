@@ -19,12 +19,8 @@ h1.heading {
     margin: 0;
 }
 
-.sub-header{
+.sub-heading{
     font-size: 2rem;
-}
-
-.slide-nav {
-    
 }
 
 .slide-previous, .slide-next {
