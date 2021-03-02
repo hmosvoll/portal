@@ -1,4 +1,4 @@
-(function(){
+(() => {
     const nextElement = document.querySelector("#next");
     const previousElement = document.querySelector("#previous");
 

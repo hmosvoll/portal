@@ -1,30 +1,20 @@
 (() => {
-    const portal = document.createElement('portal');
-    portal.src = 'portal';
-    //portal.style = '...';
+    const portal = document.querySelector("#portal");
+    const next = document.querySelector("#next");
+    const slide = document.querySelector("#slide");
 
-    portal.classList.add('portal-transition');
-    portal.addEventListener('click', (evt) => {
-        // Animate the portal once user interacts
-        portal.classList.add('portal-reveal');
+    next.addEventListener("click", (event) => {
+        event.preventDefault();
+        
+        portal.classList.add("slide-portal-reveal");
+        slide.classList.add("slide-slide");
     });
 
-    portal.addEventListener('transitionend', (evt) => {
-    if (evt.propertyName == 'transform') {
-        // Activate the portal once the transition has completed
+    portal.addEventListener("click", (event) => {
+        event.preventDefault();
+    })
+
+    portal.addEventListener('animationend', () => {
         portal.activate();
-    }
     });
-
-    document.body.append(portal);
-
-    // When the user touches the preview (embedded portal):
-    // do fancy animation, e.g. expand …
-    // and finish by doing the actual transition
-    // setTimeout(() => {
-    //     portal.activate();
-    // }, 2000);
 })();
-
-
-
