@@ -23,6 +23,12 @@ h1.heading {
     font-size: 2rem;
 }
 
+.slide-frame{
+    width: 30rem;
+    height: 20rem;
+}
+
+
 .slide-previous, .slide-next {
     position: fixed;
     top: 50%;
