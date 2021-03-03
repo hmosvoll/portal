@@ -7,30 +7,50 @@ body {
 }
 
 .slide {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
-h1.heading {
+.slide code {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.slide h1 {
     font-size: 5rem;
     margin: 0;
 }
 
-h2.heading {
+.slide h2 {
     font-size: 3.5rem;
+    margin: 0;
 }
 
-.sub-heading, .slide-list{
-    font-size: 2rem;
+.slide p, .slide ul {
+    margin: 1rem 0;
+}
+
+.slide li {
+    margin-bottom: 0.5rem;
 }
 
 .slide-previous, .slide-next {
     position: fixed;
     top: 50%;
     color: white;
+    text-decoration: none;
+    font-size: 4rem;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.slide-previous:hover, .slide-next:hover {
+    opacity: 1;
 }
 
 .slide-next{
@@ -42,7 +62,7 @@ h2.heading {
 }
 
 .slide-slide {
-    animation: slide-out 2s ease-out;
+    animation: slide-out 1.5s ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -55,8 +75,7 @@ h2.heading {
 }
 
 .slide-portal-reveal {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: slide-in 2s ease-out;
+    animation: slide-in 1.5s ease-out;
     animation-fill-mode: forwards;
 }
 

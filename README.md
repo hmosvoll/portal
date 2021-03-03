@@ -1,7 +1,12 @@
 # Portal
 Work in progress...
 
-Testing [Portal element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/)
+A small presentation about the [Portal element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal)
+
+[View presentation](https://hmosvoll.github.io/portal/)
+
+The demo portions of the presentation only works in Chrome with flags.
+[Enabling via Chrome](https://web.dev/hands-on-portals/#enable-flags)
 
 ## References
 - https://web.dev/hands-on-portals/

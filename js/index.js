@@ -10,4 +10,10 @@
             previousElement.click();
         }
     });
+
+
+    if(typeof hljs !== "undefined"){
+        hljs.highlightAll();
+    }
+
 })();

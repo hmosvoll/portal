@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portals</title>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <link href="css/index.css" rel="stylesheet" type="text/css">
-    
+
+    <script src="js/portal.js" defer></script>
     <script src="js/index.js" async></script>
 </head>
 <body>
-    <!-- TODO: Do something about all this redundance -->
     <nav>
-        <a id="previous" class="material-icons slide-previous" href="index">
+        <a id="previous" class="material-icons slide-previous" href="portals">
             chevron_left
         </a>
-        <a id="next" class="material-icons slide-next" href="demo">
+        <a id="next" class="material-icons slide-next" href="demo-code">
             chevron_right
         </a>
     </nav>
+    
     <section id="slide" class="slide">
-        <h2>Portals</h2>
-        <ul>
-            <li>New HTML Element</li>
-            <li>Page Transitions without Single Page Applications</li>
-            <li>Cross origin transitions</li>
-            <li>Sort of like iframes, but you can navigate to them</li>
-            <li>In developer trial (Behind a flag)</li>
-        </ul>
+        <h2>Demo time</h2>
+        <p>This is a Multi-page Application (MPA), served with Github pages</p>
     </section>
+    
+    <portal id="portal" src="demo-code" class="slide-portal"></portal>
 </body>
 </html>

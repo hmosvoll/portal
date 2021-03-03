@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portals</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/a11y-dark.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!-- TODO: Do something about all this redundance -->
+    <nav>
+        <a id="previous" class="material-icons slide-previous" href="demo">
+            chevron_left
+        </a>
+        <a id="next" class="material-icons slide-next" href="questions">
+            chevron_right
+        </a>
+    </nav>
+    <section id="slide" class="slide">
+        <h2>Demo code highlight</h2>
+<pre>
+<code class="html">&lt;portal id="portal" src="demo-code" class="slide-portal"&gt;&lt;/portal&gt;   
+</code>
+<code class="css">.slide-portal {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide-portal-reveal {
+    animation: slide-in 2s ease-out;
+    animation-fill-mode: forwards;
+}
+</code>
+<code class="javascript">const portal = document.querySelector("#portal");
+const next = document.querySelector("#next");
+const slide = document.querySelector("#slide");
+
+next.addEventListener("click", (event) => {
+    event.preventDefault();
+    
+    portal.classList.add("slide-portal-reveal");
+    slide.classList.add("slide-slide");
+});
+
+...
+
+portal.addEventListener('animationend', () => {
+    portal.activate();
+});
+</code>
+</pre>
+    </section>
+</body>
+</html>
