@@ -39,6 +39,10 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.slide a{
+    color: #23a8dc;
+}
+
 .slide-previous, .slide-next {
     position: fixed;
     top: 50%;

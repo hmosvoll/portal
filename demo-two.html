@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet" type="text/css">
 
+    <script src="js/portal.js" defer></script>
     <script src="js/index.js" async></script>
 </head>
 <body>
@@ -16,9 +17,14 @@
         <a id="previous" class="material-icons slide-previous" href="demo-code">
             chevron_left
         </a>
+        <a id="next" goodbye class="material-icons slide-next" href="#">
+            chevron_right
+        </a>
     </nav>
     <section id="slide" class="slide">
-        <h1>Questions?</h1>
+        <h2>Cross origin demo</h2>
+        <p>This will be the end of this presentation.</p>
     </section>
+    <portal id="portal" src="https://en.wikipedia.org/wiki/Foobar" class="slide-portal"></portal>
 </body>
 </html>
