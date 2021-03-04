@@ -1,6 +1,4 @@
 # Portal
-Work in progress...
-
 A small presentation about the [Portal element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal)
 
 [View presentation](https://hmosvoll.github.io/portal/)
